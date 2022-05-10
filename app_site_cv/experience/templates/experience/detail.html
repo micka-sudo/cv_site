@@ -1,0 +1,10 @@
+{% extends 'navbar_footer.html' %}
+
+{% block contenu %}
+    <div class="container">
+        <h1>{{ experience.titre }} </h1>
+        <img src="{{ experience.image.url }}" alt="experience.titre">
+        <p>{{ article.contenu }}</p>
+        <span>{{ experience.date_start }} </span>
+    </div>
+{% endblock %}
