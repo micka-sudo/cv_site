@@ -9,4 +9,4 @@ from django.urls import reverse
 
 def experience_pro(request):
     experiences = ExperiencePro.objects.all()
-    return render(request, 'experience/experience.html')
+    return render(request, 'experience/experience.html', context={'experiences': experiences})
