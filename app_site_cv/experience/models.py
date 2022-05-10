@@ -6,8 +6,8 @@ class ExperiencePro(models.Model):
     titre = models.CharField(max_length=150)
     contenu = models.TextField()
     slug = models.SlugField(max_length=100)
-    date_start = models.DateTimeField()
-    date_end = models.DateTimeField()
+    date_start = models.DateField()
+    date_end = models.DateField()
     image = models.ImageField(default='default.jpg')
 
     # pour avoir le Titre sur la page
