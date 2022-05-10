@@ -1,0 +1,71 @@
+body {
+    background-color: grey;
+}
+
+.navbar-nav .nav-item a {
+    color: white;
+    font-size: 20px;
+}
+
+.collapse {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.navbar.navbar-brand a {
+    color: white;
+    font-size: 50px;
+}
+
+.site-nav-bar {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: white;
+    font-size: 50px;
+}
+
+.border {
+    padding: 20px 0 20px 0;
+}
+
+.border span {
+    font-size: 50px;
+}
+
+.icone {
+    padding: 20px 0 20px 0;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: white; !important;
+    padding-bottom: 20px;
+}
+
+label {
+    display: block;
+}
+input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+
+}
+/*
+
+!*pour selectionner la 1er ligne first child*!
+span i:first-child {
+    color: #E9ECEF
+}*/
