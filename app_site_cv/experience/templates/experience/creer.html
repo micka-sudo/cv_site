@@ -1,0 +1,17 @@
+{% extends 'navbar_footer.html' %}
+
+{% block contenu %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 mt-4">
+            <h1>Nouvel exp</h1>
+            <hr class="my-4">
+            <form action="{% url 'experiences:creer' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit" class="btn btn-danger">Créer</button>
+            </div>
+        </div>
+        </form>
+    </div>
+{% endblock %}
