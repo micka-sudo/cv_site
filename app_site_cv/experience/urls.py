@@ -6,5 +6,6 @@ app_name = "experiences"
 
 urlpatterns = [
     path('experience', views.experience_pro, name='experiences'),
-    path('<slug:slug>', views.experience_pro, name='experience')
+    path('creer', views.creer_view, name='creer'),
+    path('<slug:slug>', views.experience_detail, name='experience')
 ]
