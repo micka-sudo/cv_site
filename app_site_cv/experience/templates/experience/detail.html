@@ -1,10 +1,15 @@
 {% extends 'navbar_footer.html' %}
 
 {% block contenu %}
-    <div class="container">
-        <h1>{{ experience.titre }} </h1>
-        <img src="{{ experience.image.url }}" alt="experience.titre">
-        <p>{{ article.contenu }}</p>
-        <span>{{ experience.date_start }} </span>
+    <div class="card mb-4">
+        <div class="row">
+          <h5 class="card-header col-6">{{ experience.metier }}</h5>
+            <h5 class="card-header col-6">{{ experience.societe }}</h5>
+        </div>
+        <div class="card-body text-truncate">
+            <h5 class="card-title">Du {{experience.date_start}} au {{experience.date_end}}</h5>
+            <p class="card-text">{{experience.contenu}}</p>
+            <a href="#" class="btn btn-primary">En savoir plus ?</a>
+        </div>
     </div>
 {% endblock %}
