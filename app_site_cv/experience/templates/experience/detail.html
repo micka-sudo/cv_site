@@ -1,15 +1,16 @@
 {% extends 'navbar_footer.html' %}
 
 {% block contenu %}
-    <div class="card mb-4">
+<div class="container d-flex align-items-center justify-content-center" style="height: 850px">
+    <div class="card">
         <div class="row">
           <h5 class="card-header col-6">{{ experience.metier }}</h5>
             <h5 class="card-header col-6">{{ experience.societe }}</h5>
         </div>
-        <div class="card-body text-truncate">
+        <div class="card-body">
             <h5 class="card-title">Du {{experience.date_start}} au {{experience.date_end}}</h5>
             <p class="card-text">{{experience.contenu}}</p>
-            <a href="#" class="btn btn-primary">En savoir plus ?</a>
         </div>
     </div>
+</div>
 {% endblock %}
