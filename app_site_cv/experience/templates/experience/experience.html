@@ -1,6 +1,6 @@
 {% extends 'navbar_footer.html' %}
 
-{% block titre %}Mes expériences{% endblock %}
+{% block metier %}Mes expériences{% endblock %}
 
 {% block contenu %}
 
@@ -17,16 +17,18 @@
 
     <hr class="my-4">
 
-<div class="container mb-4">
+<div class="container">
     {% for experience in experiences %}
-    <div class="card mb-4">
-      <h5 class="card-header">{{ experience.titre }}</h5>
-      <div class="card-body">
-        <h5 class="card-title">{{ experience.titre }}</h5>
-        <p class="card-text">{{ experience.contenu }}</p>
-        <p class="card-text">{{ experience.date_end }}</p>
-<!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
-      </div>
+    <div class="card">
+        <div class="row">
+          <h5 class="card-header col-6">{{ experience.metier }}</h5>
+            <h5 class="card-header col-6">{{ experience.societe }}</h5>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
     </div>
     {% endfor %}
 </div>
