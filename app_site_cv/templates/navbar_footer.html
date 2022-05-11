@@ -17,56 +17,30 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Gérard Mickaël</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Gérard Mickaël</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="navbarColor02">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">Présentation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'experiences:experiences' %}">Expérience professionnel</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Skill</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarColor02">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Présentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'experiences:experiences' %}">Expérience professionnel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+        </div>
     </div>
-  </div>
-</nav>
-<!--    <div class="container-fluid sticky-top p-0">
-                <div class="container-fluid">
-                    <ul class="navbar navbar-expand-lg bg-black">
-                      <a class="navbar-brand" href="#">Gérard Mickaël</a>
-                      <button class="navbar-toggler" type="button color-white" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav justify-content-end">
-                          <li class="nav-item ">
-                            <a class="nav-link" href="{% url 'home' %}">Présentation</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link">Expérience professionnel</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link">Skill</a>
-                          </li>
-                            <li class="nav-item">
-                            <a class="nav-link">Contact</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </ul>
-                </div>
-    </div>-->
 
+</nav>
     {% block contenu %} {% endblock %}
 
     <footer class="bg-dark text-center text-white fixed-bottom">
@@ -101,11 +75,11 @@
         <!-- Section: Social media -->
     </div>
 
-    <!-- Copyright -->
+<!--    &lt;!&ndash; Copyright &ndash;&gt;
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         <p class="text-white" href="...">&copy; | Gruy 2022</p>
     </div>
-</footer>
+</footer>-->
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
