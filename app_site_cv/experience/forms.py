@@ -5,4 +5,4 @@ from .models import ExperiencePro
 class ExperienceForm(ModelForm):
     class Meta:
         model = ExperiencePro
-        fields = ['titre', 'contenu', 'slug', 'date_start', 'date_end', 'image']
+        fields = ['metier', 'societe', 'contenu', 'slug', 'date_start', 'date_end', 'image']
