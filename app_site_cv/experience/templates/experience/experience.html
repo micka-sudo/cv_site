@@ -17,8 +17,8 @@
 
     <hr class="my-4">
 
-    <div class="container">
-        <div class="row">
+    <div class="container mb-4">
+        <div class="row mb-4">
             {% for experience in experiences %}
             <div class=" col-md-6 col-lg-4 mb-4">
                 <div class="card">
@@ -28,6 +28,7 @@
                     <div class="card-body">
                         <h2 class="card-title">{{ experience.titre }} </h2>
                         <p class="class-text">{{ experience.date_start }} </p>
+                        <p class="class-text">{{ experience.date_end }}</p>
                         <p class="card-text">
                             <small class="card-text">
                                 {{ experience.contenu }}
