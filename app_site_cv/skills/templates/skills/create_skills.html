@@ -9,7 +9,7 @@
             <form action="{% url 'skills:create_skills' %}" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form }}
-                <button type="submit" class="btn btn-danger">Créer</button>
+                <button type="submit" class="btn btn-danger">Créer skill</button>
             </div>
         </div>
         </form>
