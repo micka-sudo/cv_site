@@ -137,20 +137,12 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CONTACT_EMAIL = 'mickael.gerard.site@gmail.com'
-# ADMIN_EMAIL = ['mickael.gerard.site@gmail.com', ]
-#
-#
-# # Twilio SendGrid
-# EMAIL_HOST = 'smtp.sendgrid.net'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = 'mickael.gerard.site@gmail.com'
-# EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_API_KEY')
+CONTACT_EMAIL = 'mickael.gerard.site@gmail.com'
+ADMIN_EMAIL = ['mickael.gerard.site@gmail.com', ]
 
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = '587'
-# EMAIL_HOST_USER = 'mickael.gerard.site@gmail.com'
-# EMAIL_HOST_PASSWORD = '@%'
-# EMAIL_USE_TLS = True
-# EMAIL_USE_SSL = False
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'mickael.gerard.site@gmail.com'
+EMAIL_HOST_PASSWORD = "xxxxx"
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
