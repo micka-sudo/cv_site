@@ -2,3 +2,7 @@
 /.idea
 /.idea/
 /app_site_cv/media/
+/.env
+/.env/
+/app_site_cv/env/
+/app_site_cv/env/.env
