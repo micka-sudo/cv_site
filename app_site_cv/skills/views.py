@@ -12,4 +12,10 @@ def skills(request):
 
 
 def create_skills(request):
-    form =
+    form = SkillsForm
+    if request.method == 'POST':
+        form = SkillsForm(request.POST, request.FILES)
+        form.save()
+        return HttpResponseRedirect(reverse('skills:skills'))
+    return render(request, "skills:create_skills", context={'form': form})
+
