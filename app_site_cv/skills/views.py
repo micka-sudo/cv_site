@@ -3,12 +3,13 @@ from .models import Skills
 from .forms import SkillsForm
 from django.urls import reverse
 from django.http import Http404, HttpResponseRedirect
-from django.shortcuts import get_object_or_404
-from django.http import HttpResponse
+# from django.shortcuts import get_object_or_404
+# from django.http import HttpResponse
 
 
 def skills(request):
-    return render(request, 'skills/skills.html')
+    skills = Skills.objects.all().order_by()
+    return render(request, 'skills/skills.html', context={"skills": skills})
 
 
 def create_skills(request):
