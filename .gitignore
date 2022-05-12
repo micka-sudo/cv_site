@@ -3,3 +3,5 @@
 /.idea/
 /app_site_cv/media/
 /app_site_cv/pass/
+/app_site_cv/pass/
+/app_site_cv/db.sqlite3
