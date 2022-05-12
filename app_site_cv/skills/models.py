@@ -5,4 +5,4 @@ from django.db import models
 
 class Skills(models.Model):
     titre = models.CharField(max_length=15)
-    niveau = models.IntegerField(max_length=3)
+    niveau = models.IntegerField()
