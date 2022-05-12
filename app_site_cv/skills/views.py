@@ -18,5 +18,5 @@ def create_skills(request):
         form = SkillsForm(request.POST, request.FILES)
         form.save()
         return HttpResponseRedirect(reverse('skills:skills'))
-    return render(request, "skills:create_skills", context={'form': form})
+    return render(request, "skills/create_skills.html", context={'form': form})
 
