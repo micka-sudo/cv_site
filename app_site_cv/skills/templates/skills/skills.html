@@ -18,8 +18,8 @@
     <hr>
     {% for skill in skills %}
     <p class="text-primary">{{ skill.titre }}</p>
-    <div class="progress mb-4" style="height: 30px;">
-      <div class="progress-bar bg-info" role="progressbar" style="width: {{skill.niveau}}%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress mb-4" style="height: 20px;">
+      <div class="progress-bar bg-info" role="progressbar" style="width:{{skill.niveau}}%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
           {{skill.niveau}}%</div>
     </div>
     {% endfor %}
