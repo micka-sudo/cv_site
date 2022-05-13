@@ -6,27 +6,6 @@
 
 {% block contenu %}
 
-<div class="container ">
-    <div class="row">
-        <div class="col-6">
-             <h2 class="text-center mt-4">Skills</h2>
-        </div>
-        <div class="col-6 text-lg-center mt-4">
-            <a  class="btn btn-dark" href="{% url 'skills:create_skills' %}">Ajouter un nouveau skill</a>
-        </div>
-    </div>
-    <hr>
-    {% for skill in skills %}
-    <p class="text-primary">{{ skill.titre }}</p>
-    <div class="progress mb-4" style="height: 20px;">
-      <div class="progress-bar bg-info" role="progressbar" style="width:{{skill.niveau}}%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-          {{skill.niveau}}%</div>
-    </div>
-    {% endfor %}
-</div>
-
-
-
 <div class="container">
     <h2 class="text-center mt-4">Soft skills</h2>
     <hr class="mb-4">
@@ -58,10 +37,30 @@
         <div class="carousel-item text-center">
           <p class="text-white display-4">Adaptabilité</p>
         </div>
-
       </div>
+    <hr class="mb-4">
     </div>
 </div>
+
+<div class="container ">
+    <div class="row">
+        <div class="col-6">
+             <h2 class="text-center mt-4">Skills</h2>
+        </div>
+        <div class="col-6 text-lg-center mt-4">
+            <a  class="btn btn-dark" href="{% url 'skills:create_skills' %}">Ajouter un nouveau skill</a>
+        </div>
+    </div>
+    <hr>
+    {% for skill in skills %}
+    <p class="text-primary">{{ skill.titre }}</p>
+    <div class="progress mb-4" style="height: 20px;">
+      <div class="progress-bar bg-info" role="progressbar" style="width:{{skill.niveau}}%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+          {{skill.niveau}}%</div>
+    </div>
+    {% endfor %}
+</div>
+
 
 <div class="container">
     <h2 class="text-center mt-4">Intérêts</h2>
