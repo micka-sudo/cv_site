@@ -4,59 +4,36 @@
 
 {% block contenu %}
 
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-6 text-lg-start">
-                <h1>Mes experiences</h1>
-            </div>
-            <div class="col-lg-6 text-lg-end">
-                <a  class="btn btn-black" href="{% url 'experiences:creer' %}">Ajouter une nouvelle expérience</a>
-            </div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-6 text-lg-start">
+            <h1>Mes experiences</h1>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+            <a class="btn btn-black" href="{% url 'experiences:creer' %}">Ajouter une nouvelle expérience</a>
         </div>
     </div>
+</div>
 
-    <hr class="my-4">
+<hr class="my-4">
 
 <div class="container">
     {% for experience in experiences %}
     <div class="card">
         <div class="row">
-          <h5 class="card-header col-6 text-center">{{ experience.metier }}</h5>
+            <h5 class="card-header col-6 text-center">{{ experience.metier }}</h5>
             <h5 class="card-header col-6 text-center">{{ experience.societe }}</h5>
         </div>
         <div class="card-body text-truncate">
             <h5 class="card-title text-center mb-4">Du {{experience.date_start}} au {{experience.date_end}}</h5>
             <p class="card-text">{{experience.contenu}}</p>
-            <a href="{% url 'experiences:experience' slug=experience.slug %}" class="btn btn-primary" >En savoir plus ?</a>
+            <a class="btn btn-primary" href="{% url 'experiences:experience' slug=experience.slug %}">En savoir plus
+                ?</a>
         </div>
     </div>
     {% endfor %}
 </div>
 
-<!--    <div class="container mb-4">
-        <div class="row mb-4">
-            {% for experience in experiences %}
-            <div class=" col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <a href="{%  url 'experiences:experiences' %}">
-                        <img class="card-img-top" src="{{ experience.image.url }}" alt="experience.titre">
-                    </a>
-                    <div class="card-body">
-                        <h2 class="card-title">{{ experience.titre }} </h2>
-                        <p class="class-text">{{ experience.date_start }} </p>
-                        <p class="class-text">{{ experience.date_end }}</p>
-                        <p class="card-text">
-                            <small class="card-text">
-                                {{ experience.contenu }}
-                            </small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-
-    </div>-->
 
 {% endblock %}
 
