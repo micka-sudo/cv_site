@@ -1,5 +1,4 @@
 from django.db import models
-from django.conf import settings
 
 
 # Create your models here.
@@ -12,7 +11,5 @@ class ExperiencePro(models.Model):
     date_end = models.DateField()
     image = models.ImageField(default='default.jpg')
 
-    # pour avoir le Titre sur la page
     def __str__(self):
         return self.metier
-
