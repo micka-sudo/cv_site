@@ -1,8 +1,11 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
-from .models import Skills
-from .forms import SkillsForm
 from django.urls import reverse
-from django.http import Http404, HttpResponseRedirect
+
+from .forms import SkillsForm
+from .models import Skills
+
+
 # from django.shortcuts import get_object_or_404
 # from django.http import HttpResponse
 
@@ -19,4 +22,3 @@ def create_skills(request):
         form.save()
         return HttpResponseRedirect(reverse('skills:skills'))
     return render(request, "skills/create_skills.html", context={'form': form})
-
