@@ -4,21 +4,21 @@
 
 {% block contenu %}
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-6 mt-4">
-                <h1>Contactez moi</h1>
-                <form class="col-3" action="#" method="POST">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 mt-4">
+            <h1>Contactez moi</h1>
+            <form action="#" class="col-3" method="POST">
                 <div class="col-12 mt-4 mb-4">
                     {% csrf_token %}
                     {{ form }}
-                <div class="col-12 mt-3">
-                    <button type="submit"  class="btn btn-danger">Envoyer</button>
+                    <div class="col-12 mt-3">
+                        <button class="btn btn-danger" type="submit">Envoyer</button>
+                    </div>
                 </div>
-                </div>
-                </form>
-            </div>
+            </form>
         </div>
     </div>
+</div>
 
 {% endblock %}
