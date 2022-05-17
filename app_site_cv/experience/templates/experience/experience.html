@@ -27,8 +27,7 @@
         <div class="card-body text-truncate">
             <h5 class="card-title text-center mb-4">Du {{experience.date_start}} au {{experience.date_end}}</h5>
             <p class="card-text">{{experience.contenu}}</p>
-            <a class="btn btn-primary" href="{% url 'experiences:experience' slug=experience.slug %}">En savoir plus
-                ?</a>
+            <a class="btn btn-primary" href="{% url 'experiences:experience' slug=experience.slug %}">...</a>
         </div>
     </div>
     {% endfor %}
