@@ -10,6 +10,7 @@
         <div class="card-body">
             <h5 class="card-title text-center mb-4 fw-bold text-decoration-underline">Du {{experience.date_start}} au {{experience.date_end}}</h5>
             <p class="card-text fs-3">{{experience.contenu}}</p>
+            <a class="btn btn btn-outline-light" href="{% url 'experiences:experiences' %}" >Retour expériences</a>
         </div>
     </div>
 </div>
