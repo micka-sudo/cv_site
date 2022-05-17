@@ -21,12 +21,12 @@
     {% for experience in experiences %}
     <div class="card mb-4">
         <div class="row">
-            <h5 class="card-header col-6 text-center">{{ experience.metier }}</h5>
-            <h5 class="card-header col-6 text-center">{{ experience.societe }}</h5>
+            <h5 class="card-header col-6 text-center text-info fs-2">{{ experience.metier }}</h5>
+            <h5 class="card-header col-6 text-center text-info fs-2">{{ experience.societe }}</h5>
         </div>
         <div class="card-body text-truncate">
-            <h5 class="card-title text-center mb-4">Du {{experience.date_start}} au {{experience.date_end}}</h5>
-            <p class="card-text">{{experience.contenu}}</p>
+            <h5 class="card-title text-center mb-4 fw-bold text-decoration-underline">Du {{experience.date_start}} au {{experience.date_end}}</h5>
+            <p class="card-text fs-3">{{experience.contenu}}</p>
             <a class="btn btn-primary" href="{% url 'experiences:experience' slug=experience.slug %}">...</a>
         </div>
     </div>
