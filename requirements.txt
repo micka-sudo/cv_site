@@ -7,3 +7,4 @@ sqlparse~=0.4.2
 asgiref~=3.5.1
 setuptools~=62.2.0
 python-environ ~=0.4.54
+fontawesomefree ~=6.1.1
