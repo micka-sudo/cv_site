@@ -1,6 +1,5 @@
 /venv/
 .idea
-/app_site_cv/media/
 /app_site_cv/pass/
 db.sqlite3
 __pycache__/
